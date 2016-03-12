@@ -6,7 +6,7 @@ Abie Fund is a minimalist Solidity crowdfunding contract.
 
 The idea is to **allow people to fund one specific cause**. Guidelines (types of project) are identified by the community. 
 
-* Donors become art of the community and get one right to vote (regardless of th amount).
+* Donors become art of the community and get one right to vote (regardless of the amount).
 * Project proposals are voted by the community. 
 * A vote triggers a transaction with the recipient.
 
@@ -40,7 +40,7 @@ Twitter : [https://twitter.com/AbieFund](https://twitter.com/AbieFund)
 ## Roadmap
 
 * Test this contract
-* Call for community contrib (design, communication, etc)
+* Call for design and communication contrib
 * Review
 * Stress tests
 * Deploy
