@@ -4,7 +4,11 @@ This is only a proposal. Comments and advices are welcome.
 
 Abie Fund is a minimalist Solidity crowdfunding contract.
 
-The idea is to *allow people to fund one specific cause*. Guidelines (types of project) are identified by the community. Project proposals are voted by the community. A vote triggers a transaction with the recipient.
+The idea is to **allow people to fund one specific cause**. Guidelines (types of project) are identified by the community. 
+
+* Donors become art of the community and get one right to vote (regardless of th amount).
+* Project proposals are voted by the community. 
+* A vote triggers a transaction with the recipient.
 
 
 
@@ -19,13 +23,13 @@ The idea is to *allow people to fund one specific cause*. Guidelines (types of p
 
 The vote contract is currently under development.
 
-Abie Fund community's statement of intent is : 
+The contract aims to be replicable and used for any cause. Abie Fund community's statement of intent is : 
 
 >We want to fund non-violent actions for peace in Israel-Palestine.
 
 ## Community
 
-Feel free to contact me : jb@abie.fund
+Email : team@abie.fund
 
 Website : [http//abie.fund](http//abie.fund)
 
