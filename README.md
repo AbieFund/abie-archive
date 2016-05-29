@@ -27,6 +27,9 @@ Twitter : [https://twitter.com/AbieFund](https://twitter.com/AbieFund)
 ## Roadmap
 
 (1) Discuss and set governance rules
+
 (2) Code and test
+
 (3) Review/Audit
+
 (4) Deploy
