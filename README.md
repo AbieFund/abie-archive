@@ -1,4 +1,4 @@
-# SYNOPSIS
+## SYNOPSIS
 
 Abie Fund is a non-profit oriented DAO.
 
@@ -8,7 +8,7 @@ The idea is to **allow people to fund one specific cause**.
 
 >We want to fund non-violent initiatives for peace in Israel-Palestine.
 
-## Community
+## COMMUNITY
 
 Email : team@abie.fund
 
