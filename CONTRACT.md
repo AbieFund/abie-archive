@@ -82,6 +82,3 @@ if YES> 80% { contract.balance is sent to SOO }
 * Emergency process : emergency proposals needs to be voted by 50% of reviewers to confirm the emergency mode. If the proposal passes, it requires 80% of the voters to send the current balance of the contract to the selection of organisations (SOO).
 
 
-
-You can find some details here : https://medium.com/@julienbrg/220d2f55399d
-And discussions here : https://abiefund.consider.it/
