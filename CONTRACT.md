@@ -2,7 +2,7 @@
 
 *We will shape this 'ideal contract' together.*
 
-*We are currently testing a minimalist version (1st iteration). Feel free to open an issue or send us an email at **team@abie.fund** to join the team. There is no small contributions.*
+*We are currently testing a minimalist version (1st iteration). Feel free to open an issue or send us an email at [team@abie.fund](mailto:team@abie.fund) to join the team. There is no small contribution.*
 
 ## Add a member
 
