@@ -80,7 +80,7 @@ if YES> 80% { contract.balance is sent to SOO }
 
 * We should be able to modify the contract by vote (important mode).
 * Set a maximum amount of money to be accepted. If the contract receives more than $10K, we can send the extra-money to a selection of orgz (SOO) or just refund msg.sender.
-* Emergency process : emergency proposals needs to be voted by 50% of reviewers to confirm the emergency mode. If the proposal passes, it requires 80% of the voters to send contract.balance to the selection of orgz (SOO).
+* Emergency process : emergency proposals needs to be quicly confirmed by reviewer. We could incentivize with a decraesing bounty. If the proposal passes, it requires 80% of the voters to send contract.balance to the selection of orgz (SOO). Refund is not an option.
 * There's probably other smart safeguards to be added...
 
 
