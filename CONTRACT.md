@@ -76,6 +76,12 @@ if YES> 80% { FUND the proposal } else { DUMP the proposal }
 
 if YES> 80% { contract.balance is sent to SOO }
 
+## Advisory Board
+
+A community vote (regular mode) allows to add a member at the Advisory Board.
+
+Only one member of the Advisory Board can modify the voting mode (veto).
+
 ## Security
 
 * We should be able to modify the contract by vote (important mode).
