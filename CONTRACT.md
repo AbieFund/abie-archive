@@ -1,36 +1,48 @@
 # Contract’s description
 
-*We will shape this 'ideal contract' together.*
-
-*We are currently testing a minimalist version (1st iteration). Feel free to open an issue or send us an email at [team@abie.fund](mailto:team@abie.fund) to join the team. There is no small contribution.*
+*Feel free to send us an email at [team@abie.fund](mailto:team@abie.fund). There is no small contribution.*
 
 ## Add a member
 
-When you send money to the contract, you can ask for membership and get a right to vote (`sendMemberValidation` function).
+When you send money to the contract, you’re a `donator` and get a receipt.
 
-If you don’t ask for membership, you’re a donator and get a receipt.
+You can ask for membership and get a right to vote.
 
-A new member can become a reviewer. 
+A new `member` can:
 
-## Submit a proposal
+* Choose a `delegate`
+* Become a `delegate`
+* Become a `reviewer`
+* Rate ROA ('Return On Action')
 
-Anyone can send a proposal (on-the-ground players, organisations, members).
+Roles:
+
+* `donator`
+* `beneficiary`
+* `member`
+* `delegate`
+* `reviewer`
+* `advisor`
+
+## Proposal submission process
+
+Anyone can send a proposal (you don't even need to be a `member`).
 
 The person responsible for the project is called the `beneficiary`.
 
-The form :
+The form:
 
 * name
 * address
 * amount
 * description
 * mode
-* deadline
+* ROA
 * emergency
 
 ## Filter proposals
 
-When a proposal is received, one reviewer is randomly selected to **publish** a report and **confirm** the selected voting mode.
+When a proposal is received, one member is randomly selected among reviewers of to **publish** a report and **confirm** the selected voting mode.
 
 Reviewers always can refuse or ignore.
 
@@ -41,52 +53,81 @@ Reviewers always can refuse or ignore.
 * You can switch delegate
 * You can switch to direct democracy
 
+## Timing
+
+* Post-submission: 7 days
+* Review: 7 days
+* Vote: 14 days
+* Post-vote 'grace' period: 7 days
 
 ## Voting modes
 
-Voting mode is selected by the person responsible for the project and confirmed by the reviewer.
+Voting mode is **selected** by the `beneficiary` (proposal form) and **confirmed** by the `reviewer`.
 
 Default mode is set to regular mode.
 
-NO = members who declared themselves as opposed to a proposal
-
-YES = members who declared themselves in favor of a proposal
-
-#### Minor mode
-
-if NO > 5% { switch to REGULAR mode } else { FUND the proposal }
-
-#### Spammy mode
-
-if NO > 5% { switch to REGULAR mode } else { DUMP the proposal }
+Indicated values are not the final ones.
 
 #### Seamless mode
 
-if NO > 5% { switch to REGULAR mode } else { FUND the proposal }
+*Low quorum, low majority, quasi-automatic PASS.*
+
+Requested majority: 30%
+
+Minimum quorum: 10%
+
+Particular timing: none
+
+#### Spammy mode
+
+*Low quorum, low majority, quasi-automatic DUMP.*
+
+Requested majority: 10%
+
+Minimum quorum: 5%
+
+Particular timing: none
 
 #### Regular mode
 
-if YES > 50% { FUND the proposal } else { DUMP the proposal }
+*20% quorum, 50% majority*
+
+Requested majority: 50%
+
+Minimum quorum: 20%
+
+Particular timing: none
 
 #### Important mode
 
-if YES> 80% { FUND the proposal } else { DUMP the proposal }
+*30% quorum, 80% majority*
+
+Requested majority: 80%
+
+Minimum quorum: 30%
+
+Particular timing: none
 
 #### Emergency mode
 
-if YES> 80% { contract.balance is sent to SOO }
+*30% quorum, 80% majority, timing switch*
+
+Requested majority: 30%
+
+Minimum quorum: 80%
+
+Particular timing: fast
+
+## Return On Action
+
+The `beneficiary`is asked to publish videos, photos, testimonials. These can be rated ('likes') by any `member`. If this rating reaches 20% of members, the `reviewer` becomes `advisor` (part of the Advisory Board).
 
 ## Advisory Board
 
-A community vote (regular mode) allows to add a member at the Advisory Board.
-
-Only one member of the Advisory Board can modify the voting mode (sort of "soft veto").
+During the post-vote 'grace' period, any `advisor`
 
 ## Security
 
-* We should be able to modify the contract by vote (important mode).
-* Set a maximum amount of money to be accepted. If the contract receives more than $10K, we can send the extra-money to a selection of orgz (SOO) or just refund msg.sender.
-* Emergency process : emergency proposals needs to be quickly confirmed by reviewer. We could incentivize this with a decreasing bounty. If the proposal passes, it requires 80% of the voters to send contract.balance to the selection of orgz (SOO). Refund is not an option.
-* There's probably other smart safeguards to be added...
-
-
+* If the contract receives more than 100 ETH, `donator` gets refunded.
+* Emergency process : emergency proposals needs to be quickly confirmed by the `reviewer`. We could incentivize this with a decreasing bounty. If the proposal passes, `contract.balance` is sent to all donators in proportion of what they gave.
+* The contract cannot be modified.
