@@ -124,7 +124,7 @@ The `beneficiary`is asked to publish videos, photos, testimonials. These can be 
 
 ## Advisory Board
 
-During the post-vote 'grace' period, any `advisor`
+During the post-vote 'grace' period, any `advisor` can cancel the vote and switch to regular mode.
 
 ## Security
 
