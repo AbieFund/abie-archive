@@ -1,6 +1,6 @@
 # Contract’s description
 
-*Feel free to send us an email at [team@abie.fund](mailto:team@abie.fund). There is no small contribution.*
+*Feel free to send us an email at [team@abie.fund](mailto:team@abie.fund).*
 
 ## Add a member
 
@@ -26,7 +26,7 @@ The form:
 * amount
 * description
 * mode
-* ROA
+* rating
 * emergency
 
 ## Filter proposals
@@ -38,13 +38,13 @@ Reviewers always can refuse or ignore.
 ## Liquid democracy features
 
 * You can become a delegate (and be able to resign)
-* You can choose a delegate
+* You can choose a delegate (could be slightly incentivized)
 * You can switch delegate
 * You can switch to direct democracy
 
 ## Timing
 
-* Reviwer selection: 7 days
+* Reviewer selection: 7 days
 * Review: 7 days
 * Vote: 14 days
 * Post-vote 'grace' period: 7 days
@@ -61,7 +61,7 @@ Indicated values are not the final ones.
 
 *Low quorum, low majority, quasi-automatic PASS.*
 
-* Requested majority: 30%
+* Requested majority: 20%
 * Minimum quorum: 10%
 
 #### Spammy mode
@@ -69,7 +69,7 @@ Indicated values are not the final ones.
 *Low quorum, high majority, quasi-automatic DUMP.*
 
 * Requested majority: 80%
-* Minimum quorum: 1%
+* Minimum quorum: 10%
 
 #### Regular mode
 
@@ -87,21 +87,20 @@ Indicated values are not the final ones.
 
 #### Emergency mode
 
-*30% quorum, 80% majority, timing switch*
+*30% quorum, 80% majority, breaks any on-going process, refund and self-destroy*
 
-* Requested majority: 30%
-* Minimum quorum: 80%
-* Particular timing: fast
+* Requested majority: 60%
+* Minimum quorum: 20%
 
 ## Return On Action
 
-The `beneficiary`is asked to publish videos, photos, testimonials. These can be rated ('likes') by any `member`. If this rating reaches 20% of members, the `reviewer` becomes `advisor` (part of the Advisory Board).
+The `beneficiary`is asked to publish videos, photos, testimonials. These can be rated by any `member`. If it reaches enough members, the `reviewer` becomes `advisor`. This pool forms the Advisory Board.
 
 ## Advisory Board
 
-During the post-vote 'grace' period, a vote `advisor` (regular mode) among advisors can **cancel the vote**. `Beneficiary`has the right to send his proposal again.  
+During the post-vote 'grace' period, a vote (regular mode) among advisors can **cancel the vote**. `Beneficiary` has the right to send his proposal again.  
 
 ## Security
 
-* If the contract receives more than 100 ETH, `donator` gets refunded.
-* Emergency process : emergency proposals needs to be quickly confirmed by the `reviewer`. We could incentivize this with a decreasing bounty. If the proposal passes, `contract.balance` is sent to all donators in proportion of what they gave.
+* If the contract receives more than 100 ETH, `donator` gets refund.
+* Emergency process : emergency proposals needs to be quickly confirmed by the `reviewer`. It could be incentivized with a decreasing bounty. If the proposal passes, all donators get refund.
