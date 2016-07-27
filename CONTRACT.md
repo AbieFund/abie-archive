@@ -94,7 +94,7 @@ Indicated values are not the final ones.
 
 ## Return On Action
 
-The `beneficiary`is asked to publish videos, photos, testimonials. These can be rated by any `member`. If it reaches enough members, the `reviewer` becomes `advisor`. This pool forms the Advisory Board.
+The `beneficiary`is asked to publish videos, photos, testimonials. These can be rated by any `member`. If 'liked' enough, the `reviewer` becomes `advisor`. This pool forms the Advisory Board.
 
 ## Advisory Board
 
