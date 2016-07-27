@@ -10,21 +10,10 @@ You can ask for membership and get a right to vote.
 
 A new `member` can:
 
-* Choose a `delegate`
-* Become a `delegate`
+* Choose or become a `delegate`
 * Become a `reviewer`
-* Rate ROA ('Return On Action')
 
-Roles:
-
-* `donator`
-* `beneficiary`
-* `member`
-* `delegate`
-* `reviewer`
-* `advisor`
-
-## Proposal submission process
+## Submit a proposal
 
 Anyone can send a proposal (you don't even need to be a `member`).
 
@@ -42,7 +31,7 @@ The form:
 
 ## Filter proposals
 
-When a proposal is received, one member is randomly selected among reviewers of to **publish** a report and **confirm** the selected voting mode.
+When a proposal is received, one member is randomly selected among reviewers to **publish** a report and **confirm** the selected voting mode.
 
 Reviewers always can refuse or ignore.
 
@@ -55,7 +44,7 @@ Reviewers always can refuse or ignore.
 
 ## Timing
 
-* Post-submission: 7 days
+* Reviwer selection: 7 days
 * Review: 7 days
 * Vote: 14 days
 * Post-vote 'grace' period: 7 days
@@ -72,51 +61,37 @@ Indicated values are not the final ones.
 
 *Low quorum, low majority, quasi-automatic PASS.*
 
-Requested majority: 30%
-
-Minimum quorum: 10%
-
-Particular timing: none
+* Requested majority: 30%
+* Minimum quorum: 10%
 
 #### Spammy mode
 
-*Low quorum, low majority, quasi-automatic DUMP.*
+*Low quorum, high majority, quasi-automatic DUMP.*
 
-Requested majority: 10%
-
-Minimum quorum: 5%
-
-Particular timing: none
+* Requested majority: 80%
+* Minimum quorum: 1%
 
 #### Regular mode
 
 *20% quorum, 50% majority*
 
-Requested majority: 50%
-
-Minimum quorum: 20%
-
-Particular timing: none
+* Requested majority: 50%
+* Minimum quorum: 20%
 
 #### Important mode
 
 *30% quorum, 80% majority*
 
-Requested majority: 80%
-
-Minimum quorum: 30%
-
-Particular timing: none
+* Requested majority: 80%
+* Minimum quorum: 30%
 
 #### Emergency mode
 
 *30% quorum, 80% majority, timing switch*
 
-Requested majority: 30%
-
-Minimum quorum: 80%
-
-Particular timing: fast
+* Requested majority: 30%
+* Minimum quorum: 80%
+* Particular timing: fast
 
 ## Return On Action
 
@@ -124,10 +99,9 @@ The `beneficiary`is asked to publish videos, photos, testimonials. These can be 
 
 ## Advisory Board
 
-During the post-vote 'grace' period, any `advisor` can cancel the vote and switch to regular mode.
+During the post-vote 'grace' period, a vote `advisor` (regular mode) among advisors can **cancel the vote**. `Beneficiary`has the right to send his proposal again.  
 
 ## Security
 
 * If the contract receives more than 100 ETH, `donator` gets refunded.
 * Emergency process : emergency proposals needs to be quickly confirmed by the `reviewer`. We could incentivize this with a decreasing bounty. If the proposal passes, `contract.balance` is sent to all donators in proportion of what they gave.
-* The contract cannot be modified.
