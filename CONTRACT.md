@@ -2,6 +2,10 @@
 
 *Feel free to send us an email at [team@abie.fund](mailto:team@abie.fund).*
 
+## Introduction
+
+We’re building a nonprofit-oriented DAO. It will be coded in Solidity and deployed on Ethereum. In this ‘ideal’ contract, members don’t need to login or do anything to vote, they can choose a delegate (liquid democracy). They can switch delegate or switch to direct democracy at any time. Proposals are filtered by the community before the vote. If a proposal fits the statement of intent and guidelines, it passes with very little human intervention. Strong safeguards are set up at every steps of the process.
+
 ## Add a member
 
 When you send money to the contract, you’re a `donator` and get a receipt.
