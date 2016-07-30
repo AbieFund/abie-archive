@@ -91,7 +91,7 @@ Indicated values are not the final ones.
 
 #### Emergency mode
 
-*30% quorum, 80% majority, breaks any on-going process, refund and self-destroy*
+*20% quorum, 60% majority, breaks any on-going process, refund and self-destroy*
 
 * Requested majority: 60%
 * Minimum quorum: 20%
