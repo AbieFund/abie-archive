@@ -1,10 +1,12 @@
-# Contract’s description
+# Contract description
 
 *Feel free to send us an email at [team@abie.fund](mailto:team@abie.fund).*
 
 ## Introduction
 
-We’re building a nonprofit-oriented DAO. It will be coded in Solidity and deployed on Ethereum. In this ‘ideal’ contract, members don’t need to login or do anything to vote. They would just have to choose a delegate (liquid democracy). They also can become a delegate, switch delegate or switch to direct democracy at any time. Proposals are filtered by the community before the vote. If a proposal fits the statement of intent and guidelines, it passes with very little human intervention. Strong safeguards are set up at every steps of the process.
+We’re building a nonprofit DAO. It will be coded in Solidity and deployed on Ethereum. In this contract, members don’t need to login or do anything to vote. They would just have to choose a delegate (liquid democracy). They also can become a delegate, switch delegate or switch to direct democracy at any time. Proposals are filtered by the community before the vote. If a proposal fits the statement of intent and guidelines, it passes with very little human intervention. Strong safeguards are set up at every steps of the process.
+
+We want to provide a nonprofit DAO model to allow any community to manage a common budget (donations) in a decentralized way. Those who want to get involved are free to do so but a high participation rate is not required to vote incoming proposals. The level of transparency is very high: everyone knows precisely how funds are spent, which used to be a problem in traditional charity funds (i.e. donators give more if they know where the money goes). It's safer, faster and cost nothing to set up.
 
 ## Add a member
 
