@@ -20,7 +20,7 @@ Strong safeguards are set up at every steps of the process.
 * Ethereum is a free software.
 * Funds are managed in an extremely transparent way, which used to be a problem in the past.
 * The contract will enable people to **donate to one specific cause** with strong garanties of what will be done with the money.
-* Only a community vote can trigger an automatic transaction to the beneficiary.
+* Only a community vote can trigger an automatic transaction to the `beneficiary`.
 * We don’t need to trust third-parties like accountants, banks, etc. The money directly goes to the `beneficiary` in a peer-to-peer fashion.
 * We benefit of the high security of the network at minimal cost.
 
@@ -28,7 +28,7 @@ Strong safeguards are set up at every steps of the process.
 
 When you send money to the contract, you’re a `donor` and get a receipt.
 
-If the contract receives more than 1000 ETH, `donor` gets refund.
+If the contract's balance exceed 1000 ETH, `donor` gets refund.
 
 You can ask for membership and get a right to vote.
 
@@ -58,9 +58,9 @@ Deposit is set to 1 ETH. `beneficiary` always gets his/her deposit back except i
 
 ## Filter proposals
 
-When a proposal is received, one member is randomly selected among reviewers to **publish** a report and **confirm** the selected voting mode.
+When a proposal is received, one opt-in member is randomly selected to **publish** a report and **confirm** the voting mode selected by the `beneficiary`.
 
-Reviewers always can refuse or ignore. If so, another `reviewer`is selected. 
+Members always can refuse or ignore. If so, another `reviewer`is selected. 
 
 Standard reward amount is set to 3 ETH per review.
 
@@ -127,4 +127,4 @@ The `beneficiary`is asked to publish videos, photos, testimonials. These can be 
 
 ## Advisory Board
 
-During the post-vote 'grace' period, any `advisor` can simply **cancel the vote**. `Beneficiary` gets his deposit back and has the right to send his proposal again. This feature was set up to solve the 'bad reviewer' issue.
+During the post-vote 'grace' period, any `advisor` can simply **cancel the vote**. `Beneficiary` gets his deposit back and has the right to send his proposal again. This feature solves the 'bad reviewer' issue.
