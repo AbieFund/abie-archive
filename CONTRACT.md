@@ -2,47 +2,72 @@
 
 *Feel free to send us an email at [team@abie.fund](mailto:team@abie.fund).*
 
+*You can check our [website](http://abie.fund) to learn more about the first implementation of the project.*
+
+*It's a free software and it can be used by any other community*
+
 ## Introduction
 
-We’re building a nonprofit DAO. It will be coded in Solidity and deployed on Ethereum. In this contract, members don’t even need to login to vote. They just have to choose a delegate (liquid democracy). They also can become a delegate, switch delegate or switch to direct democracy at any time. Proposals are filtered by the community before the vote. If a proposal fits the statement of intent and guidelines, it passes with very little human intervention. Strong safeguards are set up at every steps of the process.
+We’re building a nonprofit DAO. It will be coded in Solidity and deployed on Ethereum. In this contract, **members don’t even need to login to vote**. They can choose a delegate. They also can become a delegate or switch to direct democracy at any time. Proposals are filtered by the community before the vote. If a proposal fits the **statement of intent** and **guidelines**, it passes with very little human intervention. 
+
+Liquid democracy is implemented to boost participation in the vote. It also makes the community more inclusive: you can vote even if you don't have access to any connected device.
+
+Strong safeguards are set up at every steps of the process.
+
+## Why we build on Ethereum
+
+* A contract deployed on Ethereum cannot be censored.
+* Ethereum is a free software.
+* Funds are managed in an extremely transparent way, which used to be a problem in the past.
+* The contract will enable people to **donate to one specific cause** with strong garanties of what will be done with the money.
+* Only a community vote can trigger an automatic transaction to the beneficiary.
+* We don’t need to trust third-parties like accountants, banks, etc. The money directly goes to the `beneficiary` in a peer-to-peer fashion.
+* We benefit of the high security of the network at minimal cost.
 
 ## Add a member
 
-When you send money to the contract, you’re a `donator` and get a receipt.
+When you send money to the contract, you’re a `donor` and get a receipt.
+
+If the contract receives more than 1000 ETH, `donor` gets refund.
 
 You can ask for membership and get a right to vote.
 
 A new `member` can:
 
-* Choose or become a `delegate`
-* Become a `reviewer`
+* Choose a `delegate`
+* Become a `delegate`
+* Declare himself ready to become a `reviewer`
 
 ## Submit a proposal
 
-Anyone can send a proposal (you don't even need to be a `member`).
+Anyone can send a proposal (you don't have to be a `member`).
 
 The person responsible for the project is called the `beneficiary`.
 
 The form:
 
-* name
-* address
-* amount
-* description
-* mode
-* rating
-* emergency
+* **name**: the name of the proposal
+* **address**: `beneficiary`'s Ethereum public address
+* **amount**: the amount `beneficiary`needs to carry out his/her project
+* **description**: a description of the project
+* **mode**: the voting mode selected by the `beneficiary`
+* **rating**: deliverables are rated by members
+* **emergency**: is it an emergency proposal?
+
+Deposit is set to 1 ETH. `beneficiary` always gets his/her deposit back except if the `reviewer` don't confirm the selected voting mode and set it to spammy mode. 
 
 ## Filter proposals
 
 When a proposal is received, one member is randomly selected among reviewers to **publish** a report and **confirm** the selected voting mode.
 
-Reviewers always can refuse or ignore.
+Reviewers always can refuse or ignore. If so, another `reviewer`is selected. 
+
+Standard reward amount is set to 5 ETH.
 
 ## Liquid democracy features
 
-* You can become a delegate (and be able to resign)
-* You can choose a delegate (could be slightly incentivized)
+* You can become a delegate
+* You can choose a delegate 
 * You can switch delegate
 * You can switch to direct democracy
 
@@ -96,15 +121,10 @@ Indicated values are not the final ones.
 * Requested majority: 60%
 * Minimum quorum: 20%
 
-## Return On Action
+## Return On Action (deliverables)
 
-The `beneficiary`is asked to publish videos, photos, testimonials. These can be rated by any `member`. If 'liked' enough, the `reviewer` becomes `advisor`. This pool forms the Advisory Board.
+The `beneficiary`is asked to publish videos, photos, testimonials. These can be rated by any `member`. If it gets enough 'likes', the `reviewer` becomes `advisor`. This pool forms the Advisory Board.
 
 ## Advisory Board
 
-During the post-vote 'grace' period, a vote (regular mode) among advisors can **cancel the vote**. `Beneficiary` has the right to send his proposal again.  
-
-## Security
-
-* If the contract receives more than 100 ETH, `donator` gets refund.
-* Emergency process : emergency proposals needs to be quickly confirmed by the `reviewer`. It could be incentivized with a decreasing bounty. If the proposal passes, all donators get refund.
+During the post-vote 'grace' period, any `advisor` can simply **cancel the vote**. `Beneficiary` gets his deposit back and has the right to send his proposal again. This feature was set up to solve the 'bad reviewer' issue.
