@@ -4,7 +4,7 @@
 
 *You can check our [website](http://abie.fund) to learn more about the first implementation of the project.*
 
-*It's a free software and it can be used by any other community*
+*It's a free software and it can be used by any community.*
 
 ## Introduction
 
@@ -62,7 +62,7 @@ When a proposal is received, one member is randomly selected among reviewers to 
 
 Reviewers always can refuse or ignore. If so, another `reviewer`is selected. 
 
-Standard reward amount is set to 5 ETH.
+Standard reward amount is set to 3 ETH per review.
 
 ## Liquid democracy features
 
