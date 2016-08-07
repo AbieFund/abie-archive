@@ -123,7 +123,7 @@ Indicated values are not the final ones.
 
 ## Return On Action (deliverables)
 
-The `beneficiary`is asked to publish videos, photos, testimonials. These can be rated by any `member`. If it gets enough 'likes', the `reviewer` becomes `advisor`. This pool forms the Advisory Board.
+The `beneficiary`is asked to publish videos, photos, testimonials. These can be rated by any `member`. If they get enough 'likes', the `reviewer` becomes `advisor`. This pool forms the Advisory Board.
 
 ## Advisory Board
 
