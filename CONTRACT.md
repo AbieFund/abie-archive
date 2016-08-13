@@ -45,7 +45,7 @@ A new `member` can:
 
 * Choose a `delegate`
 * Become a `delegate`
-* Declare himself ready to become a `reviewer`
+* Become a `reviewer`
 
 ## Submit a proposal
 
@@ -76,7 +76,7 @@ Members always can refuse or ignore. If so, another `reviewer` is selected.
 * You can become a `delegate`
 * You can choose a `delegate` 
 * You can switch `delegate`
-* You can switch to direct democracy
+* You can vote directly
 
 ## Timing
 
@@ -130,11 +130,11 @@ Indicated values are not the final ones.
 
 ## Post-vote 'grace' period
 
-Seven days after the proposal was voted, the `beneficiary` can withdraw half of the requested amount.
+Seven days after the proposal was voted, the `beneficiary` can withdraw the requested amount.
 
 ## Deliverables ('Return On Action')
 
-The `beneficiary` is asked to publish videos, photos, testimonials to show the results of his work. These can be rated by any `member`. If they get enough 'likes', the `beneficiary` can withdraw the other half of the amount. Also, the `reviewer` becomes `advisor`.
+The `beneficiary` is asked to publish videos, photos, testimonials to show the results of his work. These can be rated by any `member`. If they get enough 'likes', the `reviewer` becomes `advisor`.
 
 ## Advisory Board
 
