@@ -24,6 +24,15 @@ Strong safeguards are set up at every steps of the process.
 * We don’t need to trust third-parties like accountants, banks, etc. The money directly goes to the `beneficiary` in a peer-to-peer fashion.
 * We benefit of the high security of the network at minimal cost.
 
+## Roles
+
+* `donor`: Has a receipt of his donation. No voting power.
+* `member`: Each member has one right to vote.
+* `delegate`: Vote on behalf of 1 to 10 other members.
+* `beneficiary`: Submitted a proposal. Responsible for the project. 
+* `reviewer`: Members ready to be randomly selected to review proposals. Has the power to confirm or change the voting mode. 
+* `advisor`: Has the right to cancel the vote. There can be only 8 advisors in total. 
+
 ## Add a member
 
 When you send money to the contract, you’re a `donor` and get a receipt.
@@ -55,14 +64,6 @@ The form:
 * **emergency**: is it an emergency proposal?
 
 Deposit is set to 1 ETH. `beneficiary` always gets his/her deposit back except if the `reviewer` don't confirm the selected voting mode and set it to spammy mode. 
-
-## Roles
-
-* `donor`: Has a receipt of his donation. No voting power.
-* `member`: Each member has one right to vote.
-* `delegate`: Vote on behalf of 1 to 10 other members.
-* `reviewer`: Ready to be randomly selected to review proposals. Has the power to confirm or change the voting mode. 
-* `advisor`: Has the right to cancel the vote. There can be only 8 advisors in total. 
 
 ## Filter proposals
 
