@@ -14,7 +14,7 @@ Liquid democracy is implemented to boost participation in the vote. It also make
 
 Strong safeguards are set up at every steps of the process.
 
-## Why we build on Ethereum
+## Ethereum features
 
 * A contract deployed on Ethereum cannot be censored.
 * Ethereum is a free software.
@@ -49,26 +49,32 @@ The form:
 * **name**: the name of the proposal
 * **address**: `beneficiary`'s Ethereum public address
 * **amount**: the amount `beneficiary`needs to carry out his/her project
-* **description**: a description of the project
+* **description**: a description of the project (including expected results, relenvancy, and deliverables) 
 * **mode**: the voting mode selected by the `beneficiary`
 * **rating**: deliverables are rated by members
 * **emergency**: is it an emergency proposal?
 
 Deposit is set to 1 ETH. `beneficiary` always gets his/her deposit back except if the `reviewer` don't confirm the selected voting mode and set it to spammy mode. 
 
+## Roles
+
+* `donor`: Has a receipt of his donation. No voting power.
+* `member`: Each member has one right to vote.
+* `delegate`: Vote on behalf of 1 to 10 other members.
+* `reviewer`: Ready to be randomly selected to review proposals. Has the power to confirm or change the voting mode. 
+* `advisor`: Has the right to cancel the vote. There can be only 8 advisors in total. 
+
 ## Filter proposals
 
-When a proposal is received, one opt-in member is randomly selected to **publish** a report and **confirm** the voting mode selected by the `beneficiary`.
+When a proposal is received, one `reviewer` is randomly selected to **publish** a report and **confirm** the voting mode selected by the `beneficiary`. Reward amount is set to 5 ETH per review.
 
-Members always can refuse or ignore. If so, another `reviewer`is selected. 
-
-Standard reward amount is set to 3 ETH per review.
+Members always can refuse or ignore. If so, another `reviewer` is selected. 
 
 ## Liquid democracy features
 
-* You can become a delegate
-* You can choose a delegate 
-* You can switch delegate
+* You can become a `delegate`
+* You can choose a `delegate` 
+* You can switch `delegate`
 * You can switch to direct democracy
 
 ## Timing
@@ -121,10 +127,14 @@ Indicated values are not the final ones.
 * Requested majority: 60%
 * Minimum quorum: 20%
 
-## Return On Action (deliverables)
+## Post-vote 'grace' period
 
-The `beneficiary`is asked to publish videos, photos, testimonials. These can be rated by any `member`. If they get enough 'likes', the `reviewer` becomes `advisor`. This pool forms the Advisory Board.
+Seven days after the proposal was voted, the `beneficiary` can withdraw half of the requested amount.
+
+## Deliverables ('Return On Action')
+
+The `beneficiary` is asked to publish videos, photos, testimonials to show the results of his work. These can be rated by any `member`. If they get enough 'likes', the `beneficiary` can withdraw the other half of the amount. Also, the `reviewer` becomes `advisor`.
 
 ## Advisory Board
 
-During the post-vote 'grace' period, any `advisor` can simply **cancel the vote**. `Beneficiary` gets his deposit back and has the right to send his proposal again. This feature solves the 'bad reviewer' issue.
+During the post-vote 'grace' period, an `advisor` can simply **cancel the vote**. `Beneficiary` gets his deposit back and has the right to send his proposal again. Another `reviewer` is randomly selected.
