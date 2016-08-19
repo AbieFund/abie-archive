@@ -4,8 +4,6 @@
 
 *You can check our [website](http://abie.fund) to learn more about the first implementation of the project.*
 
-*It's a free software and it can be used by any community.*
-
 ## Introduction
 
 We’re building a nonprofit DAO. It will be coded in Solidity and deployed on Ethereum. In this contract, **members don’t even need to login to vote**. They can choose a delegate. They also can become a delegate or switch to direct democracy at any time. Proposals are filtered by the community before the vote. If a proposal fits the **statement of intent** and **guidelines**, it passes with very little human intervention. 
@@ -18,11 +16,14 @@ Strong safeguards are set up at every steps of the process.
 
 * A contract deployed on Ethereum cannot be censored.
 * Ethereum is a free software.
+* We benefit of the high security of the network at minimal cost.
+
+## Contract features
+
 * Funds are managed in an extremely transparent way, which used to be a problem in the past.
 * The contract will enable people to **donate to one specific cause** with strong garanties of what will be done with the money.
 * Only a community vote can trigger an automatic transaction to the `beneficiary`.
 * We don’t need to trust third-parties like accountants, banks, etc. The money directly goes to the `beneficiary` in a peer-to-peer fashion.
-* We benefit of the high security of the network at minimal cost.
 
 ## Roles
 
@@ -39,7 +40,9 @@ When you send money to the contract, you’re a `donor` and get a receipt.
 
 If the contract's balance exceed 1000 ETH, `donor` gets refund.
 
-You can ask for membership and get a right to vote.
+You can ask for membership and get a right to vote. Any `member` can send a validation.
+
+*Option to consider: we can set a maximum amount of validations*
 
 A new `member` can:
 
@@ -63,13 +66,15 @@ The form:
 * **rating**: deliverables are rated by members
 * **emergency**: is it an emergency proposal?
 
-Deposit is set to 1 ETH. `beneficiary` always gets his/her deposit back except if the `reviewer` don't confirm the selected voting mode and set it to spammy mode. 
+Deposit is set to 1 ETH. `beneficiary` always gets his/her deposit back except if the `reviewer` don't confirm the selected voting mode and set it to spam mode. 
 
 ## Filter proposals
 
 When a proposal is received, one `reviewer` is randomly selected to **publish** a report and **confirm** the voting mode selected by the `beneficiary`. Reward amount is set to 5 ETH per review.
 
-Members always can refuse or ignore. If so, another `reviewer` is selected. 
+The `reviewer` only needs to answer this question: **"Does the proposal fit the guidelines?"**. If not, the `reviewer` have to modify the voting mode and set it to regular.
+
+Members always can refuse or ignore. If so, another `reviewer` is selected.
 
 ## Liquid democracy features
 
@@ -77,6 +82,8 @@ Members always can refuse or ignore. If so, another `reviewer` is selected.
 * You can choose a `delegate` 
 * You can switch `delegate`
 * You can vote directly
+
+*Option to consider: we can set a maximum number of members per delegate.*
 
 ## Timing
 
@@ -100,7 +107,7 @@ Indicated values are not the final ones.
 * Requested majority: 20%
 * Minimum quorum: 10%
 
-#### Spammy mode
+#### Spam mode
 
 *Low quorum, high majority, quasi-automatic DUMP.*
 
@@ -139,3 +146,20 @@ The `beneficiary` is asked to publish videos, photos, testimonials to show the r
 ## Advisory Board
 
 During the post-vote 'grace' period, an `advisor` can simply **cancel the vote**. `Beneficiary` gets his deposit back and has the right to send his proposal again. Another `reviewer` is randomly selected.
+
+*Option to consider: there can only be 8 advisors in total.*
+
+## Scenarios
+
+#### Basic scenario
+
+1. `beneficiary` submit a proposal to finance a $300 mini-project.
+2. `reviewer` confirms the voting mode (seamless) and publish his report.
+3. The proposal gets 23% of 'yes'. It passes.
+4. `beneficiary` receives the requested $300 on his personal Ethereum wallet and change the amount in local currency.
+5. Project is successful, he/she publishes photos and results, all members like it and `reviewer` becomes `advisor`.
+
+#### Proposal doesn't fit the guidelines
+
+...
+
