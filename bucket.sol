@@ -17,14 +17,15 @@ contract Bucket {
 	
 	mapping (address => Member) members;
 
-    function withdraw() onlyDonor { // This will change in the next version.
-        if(members[msg.sender].deposits > 1 ether)
+    function withdraw() onlyDonor {
         msg.sender.call(1 ether);
     }
     
     modifier onlyDonor {
         if (donor[msg.sender] != true)
             throw;
+            _
+            
     }
     
     function () {
