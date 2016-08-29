@@ -16,7 +16,7 @@ Strong safeguards are set up at every steps of the process.
 
 * A contract deployed on Ethereum cannot be censored.
 * Ethereum is a free software.
-* We benefit of the high security of the network at minimal cost.
+* We benefit of the security of the network at minimal cost.
 
 ## Contract features
 
@@ -32,9 +32,11 @@ Strong safeguards are set up at every steps of the process.
 * `delegate`: Vote on behalf of 1 to 10 other members.
 * `beneficiary`: Submitted a proposal. Responsible for the project. 
 * `reviewer`: Members ready to be randomly selected to review proposals. Has the power to confirm or change the voting mode. 
-* `advisor`: Has the right to cancel the vote. There can be only 8 advisors in total. 
+* `auditor`: Has the right to cancel the vote. There can be only 8 advisors in total. 
 
 ## Add a member
+
+*A minimalist Web of Trust*
 
 When you send money to the contract, you’re a `donor` and get a receipt.
 
@@ -75,6 +77,8 @@ When a proposal is received, one `reviewer` is randomly selected to **publish** 
 The `reviewer` only needs to answer this question: **"Does the proposal fit the guidelines?"**. If not, the `reviewer` have to modify the voting mode and set it to regular.
 
 Members always can refuse or ignore. If so, another `reviewer` is selected.
+
+*Option to consider: a voting mode modification could trigger the request of a higher deposit before the proposal is submitted to vote.*
 
 ## Liquid democracy features
 
@@ -141,25 +145,14 @@ Seven days after the proposal was voted, the `beneficiary` can withdraw the requ
 
 ## Deliverables ('Return On Action')
 
-The `beneficiary` is asked to publish videos, photos, testimonials to show the results of his work. These can be rated by any `member`. If they get enough 'likes', the `reviewer` becomes `advisor`.
+The `beneficiary` is asked to publish videos, photos, testimonials to show the results of his work. These can be rated by any `member`. If they get enough 'likes', the `reviewer` becomes `auditor`.
 
-## Advisory Board
+## Auditors
 
-During the post-vote 'grace' period, an `advisor` can simply **cancel the vote**. `Beneficiary` gets his deposit back and has the right to send his proposal again. Another `reviewer` is randomly selected.
+*A minimalist reputation system to avoid the 'bad reviewer scnario'*
+
+During the post-vote 'grace' period, an `auditor` can simply **cancel the vote**. `Beneficiary` gets his deposit back and has the right to send his proposal again. Another `reviewer` is randomly selected.
 
 *Option to consider: there can only be 8 advisors in total.*
 
-## Scenarios
-
-#### Basic scenario
-
-1. `beneficiary` submit a proposal to finance a $300 mini-project.
-2. `reviewer` confirms the voting mode (seamless) and publish his report.
-3. The proposal gets 23% of 'yes'. It passes.
-4. `beneficiary` receives the requested $300 on his personal Ethereum wallet and change the amount in local currency.
-5. Project is successful, he/she publishes photos and results, all members like it and `reviewer` becomes `advisor`.
-
-#### Proposal doesn't fit the guidelines
-
-...
 
