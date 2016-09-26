@@ -10,11 +10,11 @@ contract Bucket {
 	uint256 public limit;
 	uint256 public extra;
 	
-	/* uPort integration here */
+	/* uPort integration to replace this struct */
 	struct Member {
-		address adress;
-		uint256 deposits;
-		}
+	address adress;
+	uint256 deposits;
+	}
 	
 	mapping (address => Member) members;
 
@@ -28,7 +28,6 @@ contract Bucket {
 	if (donor[msg.sender] != true)
 		throw;
 		_
-            
 	}
     
 	function () {
