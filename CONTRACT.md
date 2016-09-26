@@ -149,10 +149,18 @@ The `beneficiary` is asked to publish videos, photos, testimonials to show the r
 
 ## Auditors
 
-*A minimalist reputation system to avoid the 'bad reviewer scnario'*
+*A minimalist reputation system to avoid the 'bad reviewer scenario'*
 
 During the post-vote 'grace' period, an `auditor` can simply **cancel the vote**. `Beneficiary` gets his deposit back and has the right to send his proposal again. Another `reviewer` is randomly selected.
 
-*Option to consider: there can only be 8 advisors in total.*
+*Option to consider: there can only be 8 auditors in total, new ones replacing old ones.*
 
+## Tools
+
+*We try not to add unuseful features. We will probably use the following tools:*
+
+* **uPort** to manage memberships
+* **Orbit** as a communication channel
+* **Stabl** to allow donors to donate in their own currency
+* **IPFS**  for storage
 
