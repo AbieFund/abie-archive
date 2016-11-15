@@ -18,7 +18,7 @@ contract Bucket {
 	
 	mapping (address => Member) members;
 
-	/* This withdraw() function will be replaced by the whole proposals submission process */
+	/* This function will be replaced by the whole proposals submission process */
 	function withdraw() onlyDonor {
 	msg.sender.call(1 ether);
 	}
@@ -27,7 +27,7 @@ contract Bucket {
 	
 	if (donor[msg.sender] != true)
 		throw;
-		_
+		_;
 	}
     
 	function () {
