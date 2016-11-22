@@ -160,7 +160,6 @@ During the post-vote 'grace' period, an `auditor` can simply **cancel the vote**
 *We try not to add unuseful features. We will probably use the following tools:*
 
 * **uPort** to manage memberships
-* **Orbit** as a communication channel
 * **Stabl** to allow donors to donate in their own currency
 * **IPFS**  for storage
 
