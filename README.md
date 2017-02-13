@@ -2,4 +2,6 @@ Feel free to ask for the detailed roadmap at [team@abie.fund](mailto:team@abie.f
 
 [CONTRACT.md](https://github.com/AbieFund/contracts/blob/master/CONTRACT.md) is a description of the main contract.
 
-[bucket.sol](https://github.com/AbieFund/contracts/blob/master/bucket.sol) is one first version of it. It hasn't even been tested properly. Withdraw() function will be replaced by the whole proposal submission process and voting system.
+[Zero.sol](https://github.com/AbieFund/contracts/blob/master/Zero.sol) would be a first iteration if people who donated to the contract become donors, and existing members could validate new members.
+
+[bucket.sol](https://github.com/AbieFund/contracts/blob/master/bucket.sol) is an old version.
