@@ -4,6 +4,8 @@
 
 *This document is frequently subject to changes.*
 
+*On request we can send you the roadmap and explainer slides.*
+
 ## Introduction
 
 We’re building a nonprofit DAO. It will be coded in Solidity and deployed on Ethereum. In this contract, **members don’t even need to login to vote**. They can choose a delegate. They also can become a delegate or switch to direct democracy at any time. Proposals are filtered by a double human review before the community vote. If a proposal fits the **statement of intent** and **guidelines**, it passes with very little human intervention. 
