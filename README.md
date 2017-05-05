@@ -8,7 +8,7 @@ We’re on [Slack](http://slack.abie.fund)! Don't hesitate to join.
 
 ## Welcome to Abie
 
-Abie Fund is a DAO that includes a voting system based on "liquid democracy". The community vote triggers a transaction to the beneficiary. We vote when someone a proposal is submitted or when someone asks for membership (Sybil-proof).
+Abie Fund is a DAO that includes a voting system based on "liquid democracy". The community vote triggers a transaction to the beneficiary. We vote when a proposal is submitted or when someone asks for membership (Sybil-proof).
 
 ## Use cases
 
@@ -18,7 +18,7 @@ Abie Fund is a DAO that includes a voting system based on "liquid democracy". Th
 * A city hall that would give more decision power to people on one specific project
 * A group of friends trading together, voting every week to adjust their collective investment
 
-They can all use Abie to *take collective decisions and actions in an intuitive and easy way*.
+They can all use Abie to **take collective decisions and actions in an intuitive and easy way**.
 
 ## Implemented Features
 
@@ -52,9 +52,11 @@ npm start
 
 ## Get involved
 
-You can find a [presentation]() [Fench] and our [roadmap]().
+You can find a [presentation](http://prez.abie.fund) [Fench] and our [roadmap](http://slack.abie.fund).
 
-**All contribs are rewarded**, we're backed by lucky crypto investors! ;) Feel free to send your pull request or offers at team@abie.fund.
+**All contribs are rewarded**, we're backed by lucky crypto investors! ;) 
+
+Feel free to your pull request or send offers at [team@abie.fund](mailo:team@abie.fund).
 
 ## IPFS Storage 
 
