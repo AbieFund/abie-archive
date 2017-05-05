@@ -6,7 +6,7 @@ Abie Fund was first released on March 5th, 2017.
 
 We’re on [Slack](http://slack.abie.fund)! Don't hesitate to join.
 
-## Welcome to Abie
+## Welcome to Abie!
 
 Abie Fund is a DAO that includes a voting system based on "liquid democracy". The community vote triggers a transaction to the beneficiary. We vote when a proposal is submitted or when someone asks for membership (Sybil-proof).
 
@@ -56,9 +56,19 @@ You can find a [presentation](http://prez.abie.fund) [Fench] and our [roadmap](h
 
 **All contribs are rewarded**, we're backed by lucky crypto investors! ;) 
 
-Feel free to your pull request or send offers at [team@abie.fund](mailo:team@abie.fund).
+Feel free to your pull request or send offers at **team@abie.fund**.
 
-## IPFS Storage 
+## Next steps
+
+1. Deploy on mainnet
+2. Fund one first demo project
+3. Select 3 different use cases and measure performance
+4. Improve the documentation
+5. Listen to users fedbacks
+
+## Resources 
+
+### IPFS and storage
 
 We will use IPFS protocol to store projects' descriptions, reviews and photos related to each proposal.
 
